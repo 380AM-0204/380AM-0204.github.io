@@ -6,6 +6,29 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>广州地铁报站器</title>
+    <script type="text/javascript">
+        function password() {
+            var testV = 1;
+            var pass1 = prompt('本工具正在内测，请输入密码后进入', '');
+            while (testV < 3) {
+                if (!pass1)
+                    history.go(-1);
+                if (pass1 == "你猜密码是多少") { //密码是你猜密码是多少  
+                    alert('密码正确');
+                    break;
+                }
+                testV += 1;
+                var pass1 =
+                    prompt('密码错误!请重新输入:');
+            }
+            if (pass1 != "password" & testV == 3)
+                history.go(-1);
+            return " ";
+        }
+        document.write(password());   
+    </script>
+    <!--下面添加你要显示的内容或者代码-->
+
     <style>
         .collapsible-item {
             cursor: pointer;
@@ -35,27 +58,27 @@
     <div class="collapsible-list">
         <p>请选择线路</p>
         <ul>
-            <li><a href="/jl/1.html" class="collapsible-item">广州地铁1号线</a></li>
-            <li><a href="/jl/2.html" class="collapsible-item">广州地铁2号线</a></li>
-            <li><a href="/jl/3.html" class="collapsible-item">广州地铁3号线</a></li>
-            <li><a href="/jl/4.html" class="collapsible-item">广州地铁4号线</a></li>
-            <li><a href="/jl/5.html" class="collapsible-item">广州地铁5号线</a></li>
-            <li><a href="/jl/6.html" class="collapsible-item">广州地铁6号线</a></li>
-            <li><a href="/jl/7.html" class="collapsible-item">广州地铁7号线</a></li>
-            <li><a href="/jl/8.html" class="collapsible-item">广州地铁8号线</a></li>
-            <li><a href="/jl/9.html" class="collapsible-item">广州地铁9号线</a></li>
-            <li><a href="/jl/13.html" class="collapsible-item">广州地铁13号线</a></li>
-            <li><a href="/jl/14.html" class="collapsible-item">广州地铁14号线</a></li>
-            <li><a href="/jl/18.html" class="collapsible-item">广州地铁18号线</a></li>
-            <li><a href="/jl/21.html" class="collapsible-item">广州地铁21号线</a></li>
-            <li><a href="/jl/22.html" class="collapsible-item">广州地铁22号线</a></li>
-            <li><a href="/jl/APM.html" class="collapsible-item">广州地铁APM线</a></li>
-            <li><a href="/jl/GF.html" class="collapsible-item">广佛地铁广佛线（佛山1号线）</a></li>
-            <li><a href="/jl/F2.html" class="collapsible-item">佛山地铁2号线</a></li>
-            <li><a href="/jl/F3.html" class="collapsible-item">佛山地铁3号线</a></li>
-            <li><a href="/jl/hzyg1.html" class="collapsible-item">海珠有轨1号线</a></li>
-            <li><a href="/jl/hpyg1.html" class="collapsible-item">黄埔有轨1号线</a></li>
-            <li><a href="/jl/nhyg1s.html" class="collapsible-item">南海有轨1号线</a></li>
+            <li><a href="/bzq/jl/1.html" class="collapsible-item">广州地铁1号线</a></li>
+            <li><a href="/bzq/jl/2.html" class="collapsible-item">广州地铁2号线</a></li>
+            <li><a href="/bzq/jl/3.html" class="collapsible-item">广州地铁3号线</a></li>
+            <li><a href="/bzq/jl/4.html" class="collapsible-item">广州地铁4号线</a></li>
+            <li><a href="/bzq/jl/5.html" class="collapsible-item">广州地铁5号线</a></li>
+            <li><a href="/bzq/jl/6.html" class="collapsible-item">广州地铁6号线</a></li>
+            <li><a href="/bzq/jl/7.html" class="collapsible-item">广州地铁7号线</a></li>
+            <li><a href="/bzq/jl/8.html" class="collapsible-item">广州地铁8号线</a></li>
+            <li><a href="/bzq/jl/9.html" class="collapsible-item">广州地铁9号线</a></li>
+            <li><a href="/bzq/jl/13.html" class="collapsible-item">广州地铁13号线</a></li>
+            <li><a href="/bzq/jl/14.html" class="collapsible-item">广州地铁14号线</a></li>
+            <li><a href="/bzq/jl/18.html" class="collapsible-item">广州地铁18号线</a></li>
+            <li><a href="/bzq/jl/21.html" class="collapsible-item">广州地铁21号线</a></li>
+            <li><a href="/bzq/jl/22.html" class="collapsible-item">广州地铁22号线</a></li>
+            <li><a href="/bzq/jl/APM.html" class="collapsible-item">广州地铁APM线</a></li>
+            <li><a href="/bzq/jl/GF.html" class="collapsible-item">广佛地铁广佛线（佛山1号线）</a></li>
+            <li><a href="/bzq/jl/F2.html" class="collapsible-item">佛山地铁2号线</a></li>
+            <li><a href="/bzq/jl/F3.html" class="collapsible-item">佛山地铁3号线</a></li>
+            <li><a href="/bzq/jl/hzyg1.html" class="collapsible-item">海珠有轨1号线</a></li>
+            <li><a href="/bzq/jl/hpyg1.html" class="collapsible-item">黄埔有轨1号线</a></li>
+            <li><a href="/bzq/jl/nhyg1s.html" class="collapsible-item">南海有轨1号线</a></li>
         </ul>
         <a href="https://icp.gov.moe/?keyword=20231146" target="_blank">萌ICP备20231146号</a>
     </div>
